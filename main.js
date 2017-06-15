@@ -94,13 +94,11 @@ for (let i = 0; i < formData.length; i++) {
     form.appendChild(select);
 
     for (let j = 0; j < formData[i].options.length; j++) {
-      let optn = document.createElement('option');
-      optn.textContent = formData[i].options[j].la
-      bel;
-      optn.value = formData[i].options[j].value;
-      select.appendChild(optn);
+      let ops = document.createElement('option');
+      ops.textContent = formData[i].options[j].label;
+      ops.value = formData[i].options[j].value;
+      select.appendChild(ops);
     }
-
   } else {
 
     let input = document.createElement('input');
@@ -108,8 +106,7 @@ for (let i = 0; i < formData.length; i++) {
     input.type = formData[i].type;
     input.placeholder = formData[i].label;
     input.id = formData[i].id3
-    input.style = "margin: 3%; width: 90%; ";
-
+    input.style = "margin: 2.5%; width: 90%; ";
     form.appendChild(input);
   }
 };

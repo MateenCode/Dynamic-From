@@ -6,20 +6,27 @@ Sample colors used:
 */
 
  .container{
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
-  border: 3px solid lightgrey;
+  margin-top: 20px;
+  border: 3px solid #D0D4D7;
   border-radius: 5px;
 }
 
 
  input{
    height: 30px;
+   border: 1.5px solid #D0D4D7;
+   padding: 7px;
+   border-radius: 2px;
 
  }
  select{
-   margin-left: 30px;
-   width: 80%;
+   margin-left: 3%;
+   width: 92%;
+   border: 1.5px solid #D0D4D7;
+   height: 45px;
+   color
  }
 
 .header{
