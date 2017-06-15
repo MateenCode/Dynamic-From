@@ -1,0 +1,57 @@
+/*
+Sample colors used:
+  dark-blue: #4189C7
+  grey: #D0D4D7
+  light-blue: #C9DEF0
+*/
+
+ .container{
+  width: 80%;
+  margin: 0 auto;
+  border: 3px solid lightgrey;
+  border-radius: 5px;
+}
+
+
+ input{
+   height: 30px;
+
+ }
+ select{
+   margin-left: 30px;
+   width: 80%;
+ }
+
+.header{
+  background:#3274C1;
+  color:white;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+h1{
+  font-weight: lighter;
+  padding: 3vw;
+  padding-bottom: 0;
+  margin-top:0;
+  color: white;
+  font-size: 1.3em;
+}
+
+
+
+.submit-form{
+  background:#BDD5ED;
+  padding: 20px;
+
+}
+
+.submit-button{
+  background:#3274C1;
+  color:white;
+  padding: 8px;
+  border-radius: 3px;
+  border: none;
+  opacity: 0.8;
+  margin-left: 5px;
+}
