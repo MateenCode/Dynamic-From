@@ -1,4 +1,4 @@
-# Form-Builder
+# Dynamic-Form
 
 A dynamically created form using Vanilla javascipt
 
