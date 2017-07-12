@@ -1,64 +1,66 @@
-/*
-Sample colors used:
-  dark-blue: #4189C7
-  grey: #D0D4D7
-  light-blue: #C9DEF0
-*/
-
- .container{
-  width: 70%;
-  margin: 0 auto;
-  margin-top: 20px;
-  border: 3px solid #D0D4D7;
-  border-radius: 5px;
-}
-
-
- input{
-   height: 30px;
-   border: 1.5px solid #D0D4D7;
-   padding: 7px;
-   border-radius: 2px;
-
- }
- select{
-   margin-left: 3%;
-   width: 92%;
-   border: 1.5px solid #D0D4D7;
-   height: 45px;
-   color
- }
-
-.header{
-  background:#3274C1;
-  color:white;
+.wrapper {
   border-radius: 3px;
-  padding: 10px;
+  border: 2px solid #C1C1C1;
+  box-shadow: 0 1px 4px #C1C1C1;
+  width: 675px;
+  margin: 50px auto;
 }
 
-h1{
-  font-weight: lighter;
-  padding: 3vw;
-  padding-bottom: 0;
-  margin-top:0;
-  color: white;
-  font-size: 1.3em;
+.wrapper .header {
+  width: 100%;
+  height: 100px;
+  background-color: #3E8ACC;
+  color: #fff;
+  font-size: 30px;
+  font-family: sans-serif
 }
 
-
-
-.submit-form{
-  background:#BDD5ED;
-  padding: 20px;
-
+.wrapper .header .title {
+  display: inline-block;
+  margin-top: 30px;
+  padding-left: 20px
 }
 
-.submit-button{
-  background:#3274C1;
-  color:white;
-  padding: 8px;
+.wrapper .fields {
+  padding: 25px;
+}
+
+.wrapper .fields input,
+.wrapper .fields textarea,
+.wrapper .fields select
+ {
+  padding-left: 15px;
+  width: 500px;
+  height: 35px;
+  border: 2px solid #CCD1D4;
   border-radius: 3px;
-  border: none;
-  opacity: 0.8;
-  margin-left: 5px;
+  margin: 10px;
+  font-size: 15px;
+}
+
+.wrapper .fields textarea {
+  height: 125px;
+  padding: 15px;
+}
+
+.wrapper .footer {
+  background-color: #C8DEF1;
+  padding: 15px;
+}
+
+fieldset{
+   border: 0;
+}
+
+
+
+
+.wrapper .footer button {
+  background-color: #3E8ACC;
+  width: 120px;
+  height: 50px;
+  color: #fff;
+  border: 1px solid #267BC5;
+  border-radius: 3px;
+  font-size: 15px;
 }

@@ -1,5 +1,6 @@
-var formData = [
-  {
+// The Form Data
+// Write your code below this array
+let formData = [{
     "type": "text",
     "label": "First Name",
     "id": "user-first-name",
@@ -32,8 +33,7 @@ var formData = [
     "label": "Select Language",
     "id": "user-language",
     "icon": "",
-    "options": [
-      {
+    "options": [{
         "label": "English",
         "value": "EN"
       },
@@ -76,37 +76,59 @@ var formData = [
     "icon": "fa-phone",
     "options": []
   }
-];
+]
 
-/* START HERE */
-
+// Looping
 // Sample of how to loop over the formData
+
+const fieldset = document.querySelector("fieldset")
+
 for (let i = 0; i < formData.length; i++) {
 
-  let form = document.querySelector('.form');
 
   if (formData[i].type === "select") {
 
-    let select = document.createElement('select');
+    let select = document.createElement("select")
 
-    select.id = formData[i].id;
+    select.label = formData[i].label
+    select.id = formData[i].id
 
-    form.appendChild(select);
+    fieldset.appendChild(select)
 
-    for (let j = 0; j < formData[i].options.length; j++) {
-      let ops = document.createElement('option');
-      ops.textContent = formData[i].options[j].label;
-      ops.value = formData[i].options[j].value;
-      select.appendChild(ops);
-    }
-  } else {
+    const option = document.createElement("option")
+    option.label = "Select Language..."
+    option.disabled = true
+    option.selected = true
+    select.appendChild(option)
 
-    let input = document.createElement('input');
+    for (var g = 0; g < formData[i].options.length; g++) {
 
-    input.type = formData[i].type;
-    input.placeholder = formData[i].label;
-    input.id = formData[i].id3
-    input.style = "margin: 2.5%; width: 90%; ";
-    form.appendChild(input);
+      let selectOption = document.createElement("option")
+
+      selectOption.label = formData[i].options[g].label
+      selectOption.value = formData[i].options[g].value
+
+      select.appendChild(selectOption) }
+
+
+    } else if (formData[i].type === "textarea") {
+
+    let textArea = document.createElement("textarea")
+
+    textArea.label = formData[i].label
+    textArea.id = formData[i].id
+    textArea.placeholder = formData[i].label
+    fieldset.appendChild(textArea)
   }
-};
+
+    else{
+
+      let input = document.createElement("input")
+      input.type = formData[i].type
+      input.placeholder = formData[i].label
+      input.label = formData[i].label
+      input.id = formData[i].id
+      fieldset.appendChild(input)
+
+    }
+}
