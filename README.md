@@ -1,3 +1,5 @@
 # Form-Builder
 
-a basic form that demonstrates the use of object selectors.
+A dynamically created form using Vanilla javascipt
+
+# ScreenShot
